@@ -3,28 +3,37 @@
   	<head>
 	    <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Edoname Générator</title>
-		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+		<title>Team Name Generator</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
 	</head>
 	<body>
+		<header role="banner">
+			<h1 lang="eng">Team Name Generator</h1>
+		</header>
 	    <main role="main">
-	    	<label for="player1">Joueur 1</label>
-	    	<input id="player1" type="text">
-
-	    	<label for="player2">Joueur 2</label>
-	    	<input id="player2" type="text">
-
-	    	<label for="player3">Joueur 3</label>
-	    	<input id="player3" type="text">
-
-	    	<label for="player4">Joueur 4</label>
-	    	<input id="player4" type="text">
-
-	    	<button id="generator">Générer un nom d'équipe</button>
-
-	    	<div id="generated-name"></div>
+	    	<div class="form-input">
+	    		<label for="player1">Joueur 1</label>
+	    		<input id="player1" type="text">    		
+	    	</div>
+	    	<div class="form-input">
+	    		<label for="player2">Joueur 2</label>
+	    		<input id="player2" type="text">	    		
+	    	</div>
+	    	<div class="form-input">
+	    		<label for="player3">Joueur 3</label>
+	    		<input id="player3" type="text">	    		
+	    	</div>
+	    	<div class="form-input">
+	    		<label for="player4">Joueur 4</label>
+	    		<input id="player4" type="text">	    		
+	    	</div>
+	    	<div class="form-btn">
+	    		<button id="generator">Générer un nom d'équipe</button>
+	    	</div>
+	    	<div id="generated-name" role="status"></div>
 	    </main>
   	</body>
 </html>
