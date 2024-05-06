@@ -21,9 +21,11 @@ body {
 header h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 main[role="main"] {
   position: relative;
+  box-sizing: border-box;
   background-color: #fff;
   width: calc(100% / 12 * 8);
   border: 0.1rem dashed #d2b277;
@@ -62,6 +64,13 @@ label {
 label,
 button {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 992px) { 
+  button {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form-input {
